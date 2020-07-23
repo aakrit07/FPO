@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Financial Portfoilio Optimization</h1>
+    <p class="lead">We provide best in class Portfolios for our investors, which include</p>
+    <p>Efficient Portfolio</p>
+    <p>Maximum Return Portfolio</p>
+    <p>Minimum Risk Portfolio</p>
+    <p>Portfolios By Return %</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Efficient Portfolio</h2>
+        <p>
+            The Investors, who are seeking for profitable Potfolio's with low risk.
+            We would suggest the best stocks which have high returns with a lower risk factor.
+        </p>
+        <p><a class="btn btn-default" href="{{ url_for('eff') }}">Get Portfolio &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Maximum Return Portfolio</h2>
+        <p>
+            The Investors, who have big apetite for risk and are willing to get maximum return.
+            We would suggest the best stocks which could Maximize your Wealth.
+        </p>
+        <p><a class="btn btn-default" href="{{ url_for('about') }}">Get Portfolio &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Minimum Risk Porfolio</h2>
+        <p>
+            The Investors, who have low apetite for risk and want a stable rate of return.
+            We provide stocks that are less risky with stable returns.
+        </p>
+        <p><a class="btn btn-default" href="{{ url_for('minrisk') }}">Get Portfolio &raquo;</a></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+            <h2>Portfolios By Return %</h2>
+            <p>
+                The Investors are free to choose from the best available rate of return.
+                Stocks provided are mix in nature, i.e., Risky Stocks and Stable Stocks, Investors can choose the required expected rate of return.
+            </p>
+            <p><a class="btn btn-default" href="{{ url_for('contact') }}">Get Portfolio &raquo;</a></p>
+    </div>
+</div>
+
+    {% endblock %}

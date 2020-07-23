@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+
+<div>
+    <form action="/about" method="post">
+        <label for="Investment">Investment Amount </label>
+        <input type="number" name="InvAmount" min="10000" max="1000000000" /><p>(in INR)</p>
+        <br />
+        <input type="submit" value="Submit" class="btn btn-default"/>
+    </form>
+</div>
+<div>
+    <p>
+        ----------------------------------------PORTFOLIO FOR MAXIMUM RETRUNS----------------------------------------
+    </p>
+        <!-- For loop logic of jinja template -->
+        {%for message in message%}
+            <p>{{ message | safe }}</p>
+        {%endfor%}
+</div>
+{% endblock %}

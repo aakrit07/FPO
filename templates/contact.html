@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+
+<div>
+    <form action="/contact" method="post">
+        <label for="Investment">Investment Amount </label>
+        <input type="number" name="InvAmount" min="10000" max="1000000000" /><p>(in INR)</p>
+        <br />
+        <label for="ReturnPercent"> Expected Return Percentage </label>
+        <select name="rtn_per">
+            <option>---Select---</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+
+        </select>
+        <br />
+        <input type="submit" value="Submit" class="btn btn-default" />
+    </form>
+</div>
+<div>
+    <p>
+        ----------------------------------------PORTFOLIO FOR EXPECTED RETURN %----------------------------------------
+    </p>
+   <!-- For loop logic of jinja template -->
+        {%for message in message%}
+            <p>{{ message | safe }}</p>
+        {%endfor%}
+</div>
+{% endblock %}
