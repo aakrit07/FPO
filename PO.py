@@ -5,13 +5,13 @@ import scipy.optimize as sco
 
 np.set_printoptions(precision = 6 , suppress = True)
 
-df = pd.read_csv("C:\\Users\\aakri\\source\\repos\\Portfolio\\Data\\NIFTY_50.csv")
+df = pd.read_csv("Data\\NIFTY_50.csv")
 df = df.drop('Date', 1)
 
-df_cluster1 = pd.read_csv("C:\\Users\\aakri\\source\\repos\\Portfolio\\Data\\df_cluster1.csv")
-df_cluster3 = pd.read_csv("C:\\Users\\aakri\\source\\repos\\Portfolio\\Data\\df_cluster3.csv")
-df_cluster4 = pd.read_csv("C:\\Users\\aakri\\source\\repos\\Portfolio\\Data\\df_cluster4.csv")
-df_cluster6 = pd.read_csv("C:\\Users\\aakri\\source\\repos\\Portfolio\\Data\\df_cluster6.csv")
+df_cluster1 = pd.read_csv("Data\\df_cluster1.csv")
+df_cluster3 = pd.read_csv("Data\\df_cluster3.csv")
+df_cluster4 = pd.read_csv("Data\\df_cluster4.csv")
+df_cluster6 = pd.read_csv("Data\\df_cluster6.csv")
 
 df_cluster1 = df_cluster1.drop('Date', 1)
 df_cluster3 = df_cluster3.drop('Date', 1)
