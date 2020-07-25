@@ -116,10 +116,4 @@ def max_rtn():
     return render_template('about.html',title='Maximum Return Portfolio',message=message)
 
 if __name__ == '__main__':
-    import os
-    HOST = os.environ.get('SERVER_HOST', 'localhost')
-    try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
-    except ValueError:
-        PORT = 5555
-    app.run(HOST, PORT)
+    app.run()
